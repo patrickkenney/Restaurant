@@ -20,6 +20,9 @@ Offcanvas::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # Precompile Slim for Heroku
+  config.assets.precompile += ["*.slim"]
+  
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
