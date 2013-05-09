@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+# This is a bundler 1.2.x directive that we use to specify the ruby
+# version on Heroku.
+ruby '1.9.3'
+
 gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
@@ -7,6 +11,8 @@ gem 'rails', '3.2.9'
 
 gem 'sqlite3'
 gem 'pg'
+gem 'unicorn'
+gem 'hooves', require: 'hooves/default' # make unicorn the default for rails s
 
 # Gems used only for assets and not required
 # in production environments by default.
