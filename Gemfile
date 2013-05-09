@@ -5,7 +5,6 @@ gem 'rails', '3.2.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'pg'
 
 # Gems used only for assets and not required
@@ -15,6 +14,8 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'slim-rails'
   gem 'compass-rails'
+  gem 'sassy-buttons'
+  gem 'font-awesome-sass-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
