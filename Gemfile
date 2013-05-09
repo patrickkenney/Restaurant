@@ -14,6 +14,9 @@ gem 'pg'
 gem 'unicorn'
 gem 'hooves', require: 'hooves/default' # make unicorn the default for rails s
 
+gem 'better_errors' # more awesome error messages
+gem 'binding_of_caller' # REPL in browser during error
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
