@@ -1,11 +1,20 @@
 source 'https://rubygems.org'
 
+# This is a bundler 1.2.x directive that we use to specify the ruby
+# version on Heroku.
+ruby '1.9.3'
+
 gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'unicorn'
+gem 'hooves', require: 'hooves/default' # make unicorn the default for rails s
+
+gem 'better_errors' # more awesome error messages
+gem 'binding_of_caller' # REPL in browser during error
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -29,9 +38,6 @@ gem 'jquery-rails'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
