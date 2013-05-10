@@ -33,9 +33,7 @@ end
 
 gem 'jquery-rails'
 
-group :tddium_ignore do
-  gem 'journey', require: false      # Journey gem breaks some rails loggers
-end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

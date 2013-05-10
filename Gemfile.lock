@@ -148,7 +148,6 @@ DEPENDENCIES
   compass-rails
   font-awesome-sass-rails
   hooves
-  journey
   jquery-rails
   pg
   rails (= 3.2.9)
