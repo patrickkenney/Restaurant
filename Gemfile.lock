@@ -54,6 +54,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fittext (0.0.5)
+      compass (>= 0.10.0.rc3)
     font-awesome-sass-rails (3.0.2.2)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
@@ -102,6 +104,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    ruby-prof (0.13.0)
     sass (3.2.8)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -146,11 +149,13 @@ DEPENDENCIES
   binding_of_caller
   coffee-rails (~> 3.2.1)
   compass-rails
+  fittext
   font-awesome-sass-rails
   hooves
   jquery-rails
   pg
   rails (= 3.2.9)
+  ruby-prof
   sass-rails (~> 3.2.3)
   sassy-buttons
   slim-rails

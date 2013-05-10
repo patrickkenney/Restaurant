@@ -24,6 +24,7 @@ group :assets do
   gem 'slim-rails'
   gem 'compass-rails'
   gem 'sassy-buttons'
+  gem 'fittext'
   gem 'font-awesome-sass-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -32,6 +33,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'ruby-prof'
 
 
 
