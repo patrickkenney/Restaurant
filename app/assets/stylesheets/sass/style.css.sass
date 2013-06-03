@@ -1,3 +1,6 @@
+@import "compass/css3"
+@import "color"
+
 *
   margin: 0
   padding: 0
@@ -18,34 +21,28 @@ nav
   list-style-type: none
   margin: 0 0 .1em 0
   &.current
-    background: #657B83
+    background: $orange
     a
-      color: white
+      color: $white
+      &:hover
+        color: $white
+        cursor: default
   a
     display: block
     padding: .4em
     text-decoration: none
     &:hover
-      color: magenta
+      color: $orange
 
 [role="main"]
-  background: #eaeaea
-
-aside
-  background: #efefef
+  background: $white
 
 header
-  height: 3em
   text-align: center
-  padding: 1.75em 3% 0
-  font-size: 1.5em
-  font-weight: bold
-  color: #657B83
-  background: #ededed
+  padding: 1em 2% 1em
+
 
 footer
-  background: #657B83
-  color: #fff
   height: 2em
   text-align: center
 
@@ -54,11 +51,11 @@ footer
 
 a
   &.menu-link, &.sidebar-link
-    color: #fff
+    color: $white
     font-size: 30px
     display: block
     padding: 4px 15px
-    background: #657B83
+    background: $seamoss
     border-radius: 6px
     text-decoration: none
     font-weight: bold
@@ -134,10 +131,9 @@ a
       width: 19%
       padding: 3%
       margin-right: 0
-      color: #ededed
+      color: $gray
       float: right
       display: inline
-      background-color: #657B83
   a
     &.menu-link, &.sidebar-link
       display: none
@@ -173,13 +169,7 @@ a
   position: fixed
 
 .section
-  padding: 1em
-  border-right: 1px solid #999
-  border-left: 1px solid #999
-  strong
-    font-size: 2em
-    color: magenta
-    text-tranform: uppercase
+  padding: 2%
 
 p
   line-height: 1.4em

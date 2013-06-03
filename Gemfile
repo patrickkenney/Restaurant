@@ -34,7 +34,8 @@ end
 
 gem 'jquery-rails'
 gem 'ruby-prof'
-
+gem 'sprockets-sass'
+gem 'activeadmin'
 
 
 # To use ActiveModel has_secure_password
