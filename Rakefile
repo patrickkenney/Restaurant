@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Offcanvas::Application.load_tasks
+TheGothic::Application.load_tasks

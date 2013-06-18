@@ -1,4 +1,4 @@
-Offcanvas::Application.configure do
+TheGothic::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -19,7 +19,7 @@ Offcanvas::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-  
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 

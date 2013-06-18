@@ -2,13 +2,13 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: offcanvas_development
+  database: thegothic_development
   pool: 5
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: offcanvas_test
+  database: thegothic_test
   pool: 5
 
 
