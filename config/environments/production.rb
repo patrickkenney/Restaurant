@@ -60,6 +60,7 @@ TheGothic::Application.configure do
     :password       => ENV['MANDRILL_APIKEY'],
     :domain         => 'thegothicrestaurant.com'
   }
+  config.action_mailer.default_url_options { :host => 'gothic.herokuapp.com'}
 
 
   # Enable threaded mode

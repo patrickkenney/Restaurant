@@ -32,6 +32,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  gem 'letter_opener' # view emails in the browser during dev
+end
+
 gem 'jquery-rails'
 gem 'ruby-prof'
 gem 'sprockets-sass'
