@@ -64,6 +64,7 @@ a.menu-link, a.sidebar-link {
 	border-radius: 6px;
 	text-decoration: none;
 	font-weight: bold;
+  width: 20px;
 }
 [role="navigation"],
 [role="main"],
