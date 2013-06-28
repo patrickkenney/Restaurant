@@ -17,24 +17,33 @@ head
 	= javascript_include_tag 'application'
 	body
 	header
-	 
+	div[class="welcome"]
+    /![if lte IE 8] <img src="logo.png" />
+    /![if gt IE 8] <img src="logo.svg" />
+    /! [if !IE]>
+    == image_tag "logo.svg"
+    /! <![endif]
+     
 	nav.navigation[role="navigation"]
 	  ul#nav
 	    li.current
 	      a[href="#section-1"]
-	        | One CanvasMelt
+	        | Welcome
 	    li
 	      a[href="#section-2"]
-	        | What is it?
+	        | Daily Menu
 	    li
 	      a[href="#section-3"]
-	        | Ingredients
+	        | The Cuisine
 	    li
 	      a[href="#section-4"]
-	        | Project Goals
+	        | 108 Main Street
 	    li
 	      a[href="#section-5"]
-	        | Colophon
+	        | Reservations
+	    li
+	      a[href="#section-6"]
+	        | Contact Us
 	  .clearfix
 	div[role="main"]
 	  div[style="clear: both"]
@@ -43,57 +52,108 @@ head
   	    | ≡
   	  h1
   	    | The Gothic
-  	  h3
-  	    | A tasty single page responsive canvas pattern
-  	  a.sidebar-link.pull-right[href="#sidebar"]
-  	    | >
-	    
 				
 	  #section-2.section
 	    h2
-	      | Sweet & Sassy Ingrediets
+	      | Today's Menu
 	    p
-	      | With a little imagination and a desire to make a website feel like a native app, we endeavor to build CanvasMelt. A semantically-gifted, single-page web template, packed with goodies for designers and developers alike.
-	    p
-	      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	    
+	      | Each day our menu changes, reflecting the availability of 
+	    ul
+	      li
+          h3
+            | land
+            ul
+              li 
+                strong
+                  | appetizer
+                p
+                  | ingredient | ingredient | ingredient
+                em
+                  | 14
+              li 
+                strong
+                  | main
+                p
+                  | ingredient | ingredient | ingredient
+                em
+                  | 21
+              li 
+                strong
+                  | dessert
+                p
+                  | ingredient | ingredient | ingredient
+                em
+                  | 9
+	      li
+          h3
+            | sea
+            ul
+              li 
+                strong
+                  | appetizer
+                p
+                  | ingredient | ingredient | ingredient
+                em
+                  | 10
+              li 
+                strong
+                  | main
+                p
+                  | ingredient | ingredient | ingredient
+                em
+                  | 15
+              li 
+                strong
+                  | dessert
+                p
+                  | ingredient | ingredient | ingredient
+                em
+                  | 9
+	      li
+          h3
+            | soil
+            ul
+              li 
+                strong
+                  | appetizer
+                p
+                  | ingredient | ingredient | ingredient
+                em
+                  | 10
+              li 
+                strong
+                  | main
+                p
+                  | ingredient | ingredient | ingredient
+                em
+                  | 15
+              li 
+                strong
+                  | dessert
+                p
+                  | ingredient | ingredient | ingredient
+                em
+                  | 9
 	  #section-3.section
 	    h2 
-	      | A Recipe of Future-Friendly Features
-	    p
-	      | Built with RoR, CanvasMelt is written in Slim and seasoned with Compass, Sass, and Coffeescript. 
-	    p
-	      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	    p
-	      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	    p
-	      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	    p
-	      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	    p
-	      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	      | Inspired by season and the beauty of Maine.
 	  #section-4.section
 	    h2
-	      | Measurables & Milkshakes
+	      | Modernist Cuisine
 	    p
 	      | We strive to serve the most delectable canvas, free of charge, and rich with modern web standards.
 	    p
 	      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	  #section-5.section
 	    h2
-	      | Who's in the Kitchen?
+	      | Reservations
+	  #section-6.section
+	    h2
+	      | Contact
 	    p
-	      | CanvasMelt is made fresh by a talented team. Never afraid to test the limits and routinely cook up plenty of tasty morsels. 
-	    h3
-	      | Care to contribute?
-	    p
-	      | Fork us on Github and freely send a Pull Request when you have something we can all enjoy.
-	    
-	aside[role="complementary"]
-	  h2
-	    | Tweets are coming!
-	.clearfix
+	      | (207) 338-GOTH
+	  .clearfix
 	footer
-	  |  The MIT License (MIT). Copyright &copy; 2013 Deviceable LLC.
+	  |  Copyright &copy; 2013 The Gothic LLC
 	script
 	  |  $(document).ready(function() { $('#nav').onePageNav({ begin: function() { console.log('start') }, end: function() { console.log('stop') } }); $('.do').click(function(e) { $('#section-4').append('<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>'); e.preventDefault(); }); });

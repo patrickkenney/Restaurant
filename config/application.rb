@@ -11,6 +11,7 @@ end
 
 module TheGothic
   class Application < Rails::Application
+    
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -58,5 +59,9 @@ module TheGothic
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    # Serve fonts via Asset Pipeline
+    config.assets.paths << Rails.root.join("app", "assets", "fonts", "ashbury")
+    config.assets.precompile += %w( .svg .eot .woff .ttf )
+    
   end
 end
