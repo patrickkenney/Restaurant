@@ -22,7 +22,7 @@ gem 'binding_of_caller' # REPL in browser during error
 gem 'sass-rails',   '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'slim-rails'
-gem 'compass-rails'
+gem "compass-rails", github: "milgner/compass-rails", branch: "rails4"
 gem 'sassy-buttons'
 gem 'fittext'
 gem 'font-awesome-sass-rails'
