@@ -1,159 +1,203 @@
-doctype html
-/[if lt IE 7]
-  html.no-js.ie6 lang="en"
-/[if IE 7]
-  html.no-js.ie7 lang="en"
-/[if IE 8]
-  html.no-js.ie8 lang="en"
-/[if (gte IE 9)|!(IE)]
-  html.no-js lang="en"
-head
-	meta charset="utf-8"
-	meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
-	meta[name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"]
-	title
-	  | The Gothic Restaurant : 108 Main St in Belfast, Maine : (207) 338-GOTH
-	= stylesheet_link_tag 'application'
-	= javascript_include_tag 'application'
-	body
-	header
-	div[class="welcome"]
-    /![if lte IE 8] <img src="logo.png" />
-    /![if gt IE 8] <img src="logo.svg" />
-    /! [if !IE]>
-    == image_tag "logo.svg"
-    /! <![endif]
-     
-	nav.navigation[role="navigation"]
-	  ul#nav
-	    li.current
-	      a[href="#section-1"]
-	        | Welcome
-	    li
-	      a[href="#section-2"]
-	        | Daily Menu
-	    li
-	      a[href="#section-3"]
-	        | The Cuisine
-	    li
-	      a[href="#section-4"]
-	        | 108 Main Street
-	    li
-	      a[href="#section-5"]
-	        | Reservations
-	    li
-	      a[href="#section-6"]
-	        | Contact Us
-	  .clearfix
-	div[role="main"]
-	  div[style="clear: both"]
-	  #section-1.section
-  	  a.menu-link.pull-left[href="#nav"]
-  	    | ≡
-  	  h1
-  	    | The Gothic
-				
-	  #section-2.section
-	    h2
-	      | Today's Menu
-	    p
-	      | Each day our menu changes, reflecting the availability of 
-	    ul
-	      li
-          h3
-            | land
-            ul
-              li 
-                strong
-                  | appetizer
-                p
-                  | ingredient | ingredient | ingredient
-                em
-                  | 14
-              li 
-                strong
-                  | main
-                p
-                  | ingredient | ingredient | ingredient
-                em
-                  | 21
-              li 
-                strong
-                  | dessert
-                p
-                  | ingredient | ingredient | ingredient
-                em
-                  | 9
-	      li
-          h3
-            | sea
-            ul
-              li 
-                strong
-                  | appetizer
-                p
-                  | ingredient | ingredient | ingredient
-                em
-                  | 10
-              li 
-                strong
-                  | main
-                p
-                  | ingredient | ingredient | ingredient
-                em
-                  | 15
-              li 
-                strong
-                  | dessert
-                p
-                  | ingredient | ingredient | ingredient
-                em
-                  | 9
-	      li
-          h3
-            | soil
-            ul
-              li 
-                strong
-                  | appetizer
-                p
-                  | ingredient | ingredient | ingredient
-                em
-                  | 10
-              li 
-                strong
-                  | main
-                p
-                  | ingredient | ingredient | ingredient
-                em
-                  | 15
-              li 
-                strong
-                  | dessert
-                p
-                  | ingredient | ingredient | ingredient
-                em
-                  | 9
-	  #section-3.section
-	    h2 
-	      | Inspired by season and the beauty of Maine.
-	  #section-4.section
-	    h2
-	      | Modernist Cuisine
-	    p
-	      | We strive to serve the most delectable canvas, free of charge, and rich with modern web standards.
-	    p
-	      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	  #section-5.section
-	    h2
-	      | Reservations
-	  #section-6.section
-	    h2
-	      | Contact
-	    p
-	      | (207) 338-GOTH
-	  .clearfix
-	footer
-	  |  Copyright &copy; 2013 The Gothic LLC
-	script
-	  |  $(document).ready(function() { $('#nav').onePageNav({ begin: function() { console.log('start') }, end: function() { console.log('stop') } }); $('.do').click(function(e) { $('#section-4').append('<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>'); e.preventDefault(); }); });
+doctype
+html
+  head
+    meta content="text/html; charset=utf-8" http-equiv="Content-Type"
+    meta content="width=(device-width, initial-scale = 1.0, user-scalable =)no" name="viewport"
+      title The Gothic Restaurant
+      link href="css/style.css" media="screen" rel="stylesheet" type="text/css"
+        link href="css/prettyPhoto.css" rel="stylesheet" type="text/css"
+        link href="css/normalize.css" media="screen" rel="stylesheet" type="text/css"
+          link href="css/grid.css" media="screen" rel="stylesheet" type="text/css"
+            link href="/favicon.ico" rel="shortcut icon"
+              link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,700" rel="stylesheet" type="text/css"
+                script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+                script src="js/jquery.easing.1.3.js" type="text/javascript"
+                script src="js/jquery.prettyPhoto.js" type="text/javascript"
+                script src="js/jquery.sticky.js"
+                script src="js/js.js" type="text/javascript"
+                script src="js/jquery.stellar.min.js" type="text/javascript"
+                script src="js/waypoints.min.js" type="text/javascript"
+                script src="js/jquery.royalslider.min.js" type="text/javascript"
+                link href="css/royalslider.css" media="screen" rel="stylesheet" type="text/css"
+                  link href="css/rs-default.css" media="screen" rel="stylesheet" type="text/css"
+                    /![if lt IE 9]
+                      | <script src="js/html5shiv.js"></script>
+                      | <script src="js/respond.src.js"></script>
+  body
+    #slide1.slide data-slide="1" data-stellar-background-ratio="0.5"
+      .effect_2.padding_slide1
+        .container.clearfix
+          .row
+            .filtr_bg
+              .slogan
+                .slogan_text
+                  a data-slide="2" href="#"
+                    img.logo src="images/logo.svg"
+              .button_block
+                a.button data-slide="2" title=""
+                  span
+            .clear
+    .menu
+      .container.clearfix
+        #nav
+          ul.navigation
+            li data-slide="1"
+            li data-slide="2"
+            li data-slide="4"
+            li data-slide="6"
+            li data-slide="8"
+            .clear
+    #slide2.slide data-slide="2" data-stellar-background-ratio="0.5"
+      .container.clearfix
+        #content-slider-1.row.royalSlider.contentSlider.rsDefault
+          .rsContent.row.omega
+            .course
+              h4 starters
+              dl.grid_4
+                dt smashed peas
+                dd burrata | mint | toast
+              dl.grid_4
+                dt cheese plate
+                dd 1 block 7 | 2 block 12 | 3 block 16
+              dl.grid_4.omega
+                dt oysters on the half shell
+                dd 1/2 dozen 12 | dozen 24
+              .row.omega
+                h4 flatbread
+                dl.grid_6
+                  dt spinach
+                  dd fennel | dill | goat cheese
+                dl.grid_6.omega
+                  dt smoked chicken
+                  dd asparagus | ricotta | arugula
+            .row.omega
+              .course
+                h4 mains
+                dl.grid_6
+                  dt spinach
+                  dd fennel | dill | goat cheese
+                  dt spinach
+                  dd fennel | dill | goat cheese
+                dl.grid_6.omega
+                  dt smoked chicken
+                  dd asparagus | ricotta | arugula
+                  dt smoked chicken
+                  dd asparagus | ricotta | arugula
+            span.rsTmb LUNCH
+          .rsContent
+            h3 July 8th, 2013
+            .grid_4
+              h4 Land
+              dl
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+            .grid_4
+              h4 Sea
+              dl
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+            .grid_4.omega
+              h4 Soil
+              dl
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+            span.rsTmb DINNER
+          .rsContent
+            .grid_4
+              h4 Land
+              dl
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+            .grid_4
+              h4 Sea
+              dl
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+            .grid_4.omega
+              h4 Soil
+              dl
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+                dt summer squash
+                dd tomato | green olive | kale pesto
+            span.rsTmb DRINKS
+    #slide3.slide data-slide="3" data-stellar-background-ratio="0.5"
+      .padding_slide3
+        .container.clearfix
+          .row
+    #slide4.slide data-slide="4" data-stellar-background-ratio="0.5"
+      .container.clearfix
+        .row
+          .grid_7
+            h1 the cusine
+            p At the cross of where tradition meets innovation, we have developed our menu. Taking the best from Maine's land, sea and soil, our chef Jason Paul has embarked on a culinary journey highlighting the best from what's in season. Inspired by the local flora and fauna, we present cuisine that will indulge the senses and nourish the body.
+          .grid_5.omega
+            img alt="The Food" src="images/circle1.png"
+          .clear
+          .grid_5
+            img alt="The Food" src="images/circle2.png"
+          .grid_7.omega
+            h1 the space
+            p Commissioned by The Belfast National Bank in the 1870's and designed by Portland Architect George M. Harding, the High Victorian Gothic style of adorns every corner of Belfast's flatiron building. From the wrought-iron spires atop the dormer windows, to the decorative stone pilasters and ornate brickwork, we are fortunate to have 108 Main Street as our home and kitchen.
+          .clear
+          .grid_7
+            h1 belfast, maine
+            p
+              | Nestled in the heart of the Maine coast, our community is as beautiful and idyllic as Thoreau’s dreams. Whether it’s a summer vacation or a four season homestead, our jewel in the Penobscot Bay is a sight to be hold. We at The Gothic are blessed to have the local support and love required to make our mission successful.
+          .grid_5.omega
+            img alt="The Food" src="images/circle3.png"
+          .clear
+    #slide5.slide data-slide="5" data-stellar-background-ratio="0.1"
+      .padding_slide5
+        .container.clearfix
+    #slide6.slide data-slide="6" data-stellar-background-ratio="0.5"
+      .container.clearfix
+        #content.row
+          .grid_7
+            h1 reservations
+            p For dinner we recommend reservations but gladly accept walk-ins. Reservations for lunch are not required.
+            h2 large parties
+            p
+              | For parties larger than four, please
+              a href="mailto:host@thegothicrestaurant.com" title="host@thegothicrestaurant.com"
+              | or call (207) 338-GOTH.
+          .grid_5.omega
+            iframe#seatme-widget frameborder="0" height="515" src="https://www.seatme.com/api/v3/widget.htm?restaurant-id=0a0ae4f6-d2f4-11e2-bfcb-12314000ca9c&mobile-prompt=true&color-scheme=dark&color=%23a6b2a3" width="240"
+            css:
+              #seatme-link a:link {text-decoration: none; color:#b3b3b3} #seatme-link a:hover {text-decoration: none; color:#066382} #seatme-link a:visited  text-decoration: none; color:#066382
+    #slide7.slide data-slide="7" data-stellar-background-ratio="0.1"
+      .padding_slide7
+        .container.clearfix
+    #slide8.slide data-slide="8" data-stellar-background-ratio="0.5"
+      .container.clearfix
+        .row
+          h1 connect
+        .clear
+      /! <div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=los+angeles&amp;amp;aq=&amp;amp;sll=37.0625,-95.677068&amp;amp;sspn=53.080379,114.169922&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=Los+Angeles,+California&amp;amp;ll=34.052234,-118.243685&amp;amp;spn=0.003427,0.006968&amp;amp;t=m&amp;amp;z=14&amp;amp;output=embed"></iframe></div>
+    #footer
+      .container.clearfix
+        .copyright &copy; 2013 The Gothic Restaurant
+        #back_top
+          a.button data-slide="1" title=""
