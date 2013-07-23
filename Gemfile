@@ -37,7 +37,12 @@ group :development do
   gem 'letter_opener' # view emails in the browser during dev
 end
 
-gem 'jquery-rails'
+# for now, force jquery-ui-rails to lower than version 3
+# because activeadmin 0.6.0 is not compatible.
+# http://stackoverflow.com/questions/16844411/rails-active-admin-deployment-couldnt-find-file-jquery-ui
+# https://github.com/gregbell/active_admin/commit/1d29474c489d558d1fe0aad3392db312164bab0f
+gem 'jquery-rails', "< 3.0.0"
+
 gem 'jquery-ui-rails'
 gem 'ruby-prof'
 gem 'sprockets-sass'
