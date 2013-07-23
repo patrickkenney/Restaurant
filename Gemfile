@@ -21,6 +21,7 @@ gem 'binding_of_caller' # REPL in browser during error
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'slim', '~> 1.3'
   gem 'slim-rails'
   gem 'compass-rails'
   gem 'sassy-buttons'
@@ -37,6 +38,7 @@ group :development do
 end
 
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'ruby-prof'
 gem 'sprockets-sass'
 gem 'activeadmin'
