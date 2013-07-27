@@ -12,24 +12,18 @@ head
 	meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
 	meta[name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"]
 	title
-	  | The Gothic Restaurant : 108 Main St in Belfast, Maine : (207) 338-GOTH
+	  | The Gothic Restaurant | 108 Main St in Belfast, Maine | (207) 338-GOTH
 	= stylesheet_link_tag 'application'
 	= javascript_include_tag 'application'
 body
   #slide1.slide data-slide="1" data-stellar-background-ratio="0.5"
-    .effect_2.padding_slide1
+    .padding_slide1
       .container.clearfix
         .row
           .filtr_bg
-            .slogan
-              .slogan_text
-                a data-slide="2" href="#"
-                  /![if lte IE 8] <img src="logo.png" class="logo" />
-                  /![if gt IE 8] <img src="logo.svg" class="logo" />
-                  /! [if !IE]>
-                  == image_tag "logo.svg", :class => "logo"
-                  /! <![endif]
-                  
+            #logo
+              a.iconfont data-slide="2"
+                | b
             .button_block
               a.button data-slide="2" title=""
                 span
@@ -38,168 +32,185 @@ body
     .container.clearfix
       #nav
         ul.navigation
-          li data-slide="1"
-            | welcome
+          li.iconfont data-slide="1"
+            | a
           li data-slide="2"
-            | cuisine
+            | menus
           li data-slide="4"
-            | our story
+            | inspiration
           li data-slide="6"
-            | reserve
-          li data-slide="8"
-            | connect
+            | reservations
           .clear
-  #slide2.slide data-slide="2" data-stellar-background-ratio="0.5"
-    .container.clearfix
-      #content-slider-1.row.royalSlider.contentSlider.rsDefault
-        .rsContent.row.omega
-          .course
-            h4 starters
-            dl.grid_4
-              dt smashed peas
-              dd burrata | mint | toast
-            dl.grid_4
-              dt cheese plate
-              dd 1 block 7 | 2 block 12 | 3 block 16
-            dl.grid_4.omega
-              dt oysters on the half shell
-              dd 1/2 dozen 12 | dozen 24
-            .row.omega
-              h4 flatbread
-              dl.grid_6
-                dt spinach
-                dd fennel | dill | goat cheese
-              dl.grid_6.omega
-                dt smoked chicken
-                dd asparagus | ricotta | arugula
-          .row.omega
-            .course
-              h4 mains
-              dl.grid_6
-                dt spinach
-                dd fennel | dill | goat cheese
-                dt spinach
-                dd fennel | dill | goat cheese
-              dl.grid_6.omega
-                dt smoked chicken
-                dd asparagus | ricotta | arugula
-                dt smoked chicken
-                dd asparagus | ricotta | arugula
-          span.rsTmb LUNCH
-        .rsContent
-          h3 July 8th, 2013
-          .grid_4
-            h4 Land
-            dl
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-          .grid_4
-            h4 Sea
-            dl
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-          .grid_4.omega
-            h4 Soil
-            dl
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-          span.rsTmb DINNER
-        .rsContent
-          .grid_4
-            h4 Land
-            dl
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-          .grid_4
-            h4 Sea
-            dl
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-          .grid_4.omega
-            h4 Soil
-            dl
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-              dt summer squash
-              dd tomato | green olive | kale pesto
-          span.rsTmb DRINKS
-  #slide3.slide data-slide="3" data-stellar-background-ratio="0.5"
-    .padding_slide3
+  .menu_nav.clearfix.hidden
+    .ul.navigation
+      li data-slide="11"
+        | lunch
+      li data-slide="12"
+        | dinner
+      li data-slide="13"
+        | bar
+      li data-slide="14"
+        | dessert
+  #slide2.slide.div-light.clearfix data-slide="2"
+    .row data-slide="11"
+      .course
+        h4 starters
+        dl.grid_4
+          dt smashed peas
+          dd burrata | mint | toast
+        dl.grid_4
+          dt cheese plate
+          dd 1 block 7 | 2 block 12 | 3 block 16
+        dl.grid_4.omega
+          dt oysters on the half shell
+          dd 1/2 dozen 12 | dozen 24
+        .row.omega
+          h4 flatbread
+          dl.grid_6
+            dt spinach
+            dd fennel | dill | goat cheese
+          dl.grid_6.omega
+            dt smoked chicken
+            dd asparagus | ricotta | arugula
+      .course
+        h4 mains
+        dl.grid_6
+          dt spinach
+          dd fennel | dill | goat cheese
+          dt spinach
+          dd fennel | dill | goat cheese
+        dl.grid_6.omega
+          dt smoked chicken
+          dd asparagus | ricotta | arugula
+          dt smoked chicken
+          dd asparagus | ricotta | arugula
+    .row.omega data-slide="12"
+      h3 July 8th, 2013
+      .grid_4
+        h4 Land
+        dl
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+      .grid_4
+        h4 Sea
+        dl
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+      .grid_4.omega
+        h4 Soil
+        dl
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+    .row.omega data-slide="13"
+      .grid_4
+        h4 Land
+        dl
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+      .grid_4
+        h4 Sea
+        dl
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+      .grid_4.omega
+        h4 Soil
+        dl
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+          dt summer squash
+          dd tomato | green olive | kale pesto
+  #slide3.slide.coolbg data-slide="3" data-stellar-background-ratio="0.5"
+    .padding_slide
       .container.clearfix
         .row
-  #slide4.slide data-slide="4" data-stellar-background-ratio="0.5"
+  #slide4.slide.div-dark data-slide="4"
     .container.clearfix
-      .row
-        .grid_7
+      .row.m-20
+        .grid_7.omega
           h1 the cusine
           p At the cross of where tradition meets innovation, we have developed our menu. Taking the best from Maine's land, sea and soil, our chef Jason Paul has embarked on a culinary journey highlighting the best from what's in season. Inspired by the local flora and fauna, we present cuisine that will indulge the senses and nourish the body.
-        .grid_5.omega
-          img alt="The Food" src="images/circle1.png"
+        .grid_4.offset-1.omega
+          == image_tag "circle1.png", :alt => "The Cuisine"
         .clear
-        .grid_5
-          img alt="The Food" src="images/circle2.png"
-        .grid_7.omega
+      .row.m-20
+        .grid_7.push-4.omega.offset-1
           h1 the space
           p Commissioned by The Belfast National Bank in the 1870's and designed by Portland Architect George M. Harding, the High Victorian Gothic style of adorns every corner of Belfast's flatiron building. From the wrought-iron spires atop the dormer windows, to the decorative stone pilasters and ornate brickwork, we are fortunate to have 108 Main Street as our home and kitchen.
+        .grid_4.pull-8
+          == image_tag "circle2.png", :alt => "The Space"
         .clear
-        .grid_7
+      .row.m-20
+        .grid_7.omega
           h1 belfast, maine
           p
             | Nestled in the heart of the Maine coast, our community is as beautiful and idyllic as Thoreau’s dreams. Whether it’s a summer vacation or a four season homestead, our jewel in the Penobscot Bay is a sight to be hold. We at The Gothic are blessed to have the local support and love required to make our mission successful.
-        .grid_5.omega
-          img alt="The Food" src="images/circle3.png"
+        .grid_4.offset-1.omega
+          == image_tag "circle3.png", :alt => "The Cuisine"
         .clear
-  #slide5.slide data-slide="5" data-stellar-background-ratio="0.1"
-    .padding_slide5
+  #slide5.slide.coolbg data-slide="5" data-stellar-background-ratio="0.1"
+    .padding_slide
       .container.clearfix
-  #slide6.slide data-slide="6" data-stellar-background-ratio="0.5"
-    .container.clearfix
-      #content.row
-        .grid_7
-          h1 reservations
-          p For dinner we recommend reservations but gladly accept walk-ins. Reservations for lunch are not required.
-          h2 large parties
-          p
-            | For parties larger than four, please
-            a href="mailto:host@thegothicrestaurant.com" title="host@thegothicrestaurant.com"
-            | or call (207) 338-GOTH.
-        .grid_5.omega
-          iframe#seatme-widget frameborder="0" height="515" src="https://www.seatme.com/api/v3/widget.htm?restaurant-id=0a0ae4f6-d2f4-11e2-bfcb-12314000ca9c&mobile-prompt=true&color-scheme=dark&color=%23a6b2a3" width="240"
-          css:
-            #seatme-link a:link {text-decoration: none; color:#b3b3b3} #seatme-link a:hover {text-decoration: none; color:#066382} #seatme-link a:visited  text-decoration: none; color:#066382
-  #slide7.slide data-slide="7" data-stellar-background-ratio="0.1"
-    .padding_slide7
-      .container.clearfix
-  #slide8.slide data-slide="8" data-stellar-background-ratio="0.5"
+  #slide6.slide.div-light data-slide="6"
     .container.clearfix
       .row
-        h1 connect
-      .clear
-    /! <div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=los+angeles&amp;amp;aq=&amp;amp;sll=37.0625,-95.677068&amp;amp;sspn=53.080379,114.169922&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=Los+Angeles,+California&amp;amp;ll=34.052234,-118.243685&amp;amp;spn=0.003427,0.006968&amp;amp;t=m&amp;amp;z=14&amp;amp;output=embed"></iframe></div>
-  #footer
+        .grid_6
+          h1 reservations
+          p 
+            | Reservations are recommended for dinner and may be placed 
+            a href="http://seatme.com/the-gothic/" title="Online Reservations" target="_blank"
+              | online 
+            | or by calling the restaurant. For parties larger than four, please 
+            a href="mailto:host@thegothicrestaurant.com" title="host@thegothicrestaurant.com"
+              | email us 
+            | or call (207) 338-GOTH.
+        .grid_6.omega
+          h1 location
+          p 
+            | 108 Main Street, Belfast, Maine | 
+            a href="http://goo.gl/maps/lTCU5" title="Get Directions" target="_blank"
+              | map
+ 
+  #slide7.slide.coolbg data-slide="7" data-stellar-background-ratio="0.1"
+    .padding_slide
+      .container.clearfix
+  #footer.div-light
     .container.clearfix
-      .copyright &copy; 2013 The Gothic Restaurant
+      .address 108 Main Street, Belfast, Maine 
+      ul
+        li
+          a href="http://facebook.com/thegothic" title="Facebook"
+            | Facebook
+        li
+          a href="http://twitter.com/thegothic" title="Twitter"
+            | Twitter
+        li
+          a href="http://instagram.com/thegothicrestaurant" title="Instagram"
+            | Instagram
+        li
+          a href="https://foursquare.com/v/the-gothic/519ed1d6011ca5da67d27f83" title="Foursquare"
+            | Foursquare
+      .copyright &copy; 2013 The Gothic Restaurant 
       #back_top
         a.button data-slide="1" title=""
