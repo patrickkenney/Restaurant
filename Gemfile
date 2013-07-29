@@ -34,6 +34,7 @@ end
 
 group :development do
   gem 'letter_opener' # view emails in the browser during dev
+  gem 'git-smart'
 end
 
 # for now, force jquery-ui-rails to lower than version 3
