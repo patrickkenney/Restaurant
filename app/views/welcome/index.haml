@@ -1,0 +1,349 @@
+!!!
+/[if lt IE 7] <html class="no-js ie6" lang="en"></html>
+/[if IE 7] <html class="no-js ie7" lang="en"></html>
+/[if IE 8] <html class="no-js ie8" lang="en"></html>
+/[if (gte IE 9)|!(IE)] <html class="no-js" lang="en"></html>
+%head
+  %meta{:charset => "utf-8"}/
+  %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+  %meta{:content => "width=device-width, initial-scale=1, minimum-scale=1", :name => "viewport"}/
+  %title The Gothic Restaurant | 108 Main St in Belfast, Maine | (207) 338-GOTH
+  <!-- @reload -->
+  <!-- @stylesheet assets/css/* -->
+  <!-- @javascript jquery -->
+  <!-- @javascript assets/js/* -->
+%body
+  #slide1.slide{"data-slide" => "1", "data-stellar-background-ratio" => "0.5"}
+    .padding_slide1
+      .container.clearfix
+        .row
+          .filtr_bg
+            #logo
+              %a.iconfont{"data-slide" => "2"} b
+            .button_block
+              %a.button{"data-slide" => "2", :title => ""}
+                %span
+          .clear
+  .menu
+    .container.clearfix
+      #nav
+        %ul.navigation
+          %li.iconfont{"data-slide" => "1"} a
+          %li{"data-slide" => "2"} food
+          %li{"data-slide" => "4"} drink
+          %li{"data-slide" => "6"} philosophy
+          %li{"data-slide" => "8"} reservations
+          %li{"data-slide" => "10"} contact
+        .clear
+  #slide2.slide.div-light.clearfix.center{"data-slide" => "2"}
+    .container
+      .row.m-20
+        %h2 LUNCH
+        .course
+          %h3 share
+          .row
+            .grid_4
+              %h4 artisan cheeses
+              %h5 1 for 7 | 2 for 12 | 3 for 16
+            .grid_4
+              %h4 local oysters on the half shell 
+              %h5 ½ dozen 12 | dozen 24 
+            .grid_4.omega
+              %h4 smashed peas
+              %h5 burrata | mint | toast | 10
+        .course
+          %h3 flatbread
+          .row
+            .grid_6
+              %h4 spinach
+              %h5 fennel | dill | goat cheese
+              %h5 12
+              
+            .grid_6.omega
+              %h4 smoked chicken
+              %h5 asparagus | ricotta | arugula
+              %h5 13
+          %h3 mains
+          .row
+            .grid_6
+              %h4 spring pea "fritters"
+              %h5 cucumber | tahini | tomato | greens
+              %h5 10
+            .grid_6.omega
+              %h4 kale salad
+              %h5 spiced almond | avocado | lemon | harissa
+              %h5 11
+            .grid_6
+              %h4 gothic lobster roll
+              %h5 house made roll | lobster | lobster mayo
+              %h5 14
+            .grid_6.omega
+              %h4 buffalo burger
+              %h5 goat cheese | pickled jalapeno | herb mayo
+              %h5 12
+      .row
+        %h2 DINNER
+        .course
+          %h3 share
+          .row
+            .grid_4
+              %h4 artisan cheeses
+              %h5 three selections & accoutrements | 16
+            .grid_4
+              %h4 oysters
+              %h5 ½ dozen 12 | dozen 24 
+            .grid_4.omega
+              %h4 fava bean
+              %h5 peas | burrata | mint | toast | 10
+        .course
+          %h3 starters
+          .row
+            .grid_4
+              %h4 summer tomato
+              %h5 basil | olive oil | mozzarella gelato
+              %h5 12
+            .grid_4
+              %h4 crab
+              %h5 avocado | lime | chili | sweet potato | toast
+              %h5 14
+            .grid_4.omega
+              %h4 kale
+              %h5 alomd | harissa | lemon | olive
+              %h5 11
+          .row
+            .grid_4
+              %h4 beets
+              %h5 chévre | arugula | mint
+              %h5 10
+            .grid_4
+              %h4 lobster ceviche
+              %h5 tomato jam | citrus | chili
+              %h5 14
+              %h5
+            .grid_4.omega
+              %h4 chilled broccoli soup
+              %h5 almond | radish | cashew yogurt
+              %h5 9
+        .course
+          %h3 mains
+          .row
+            .grid_4
+              %h6 land
+              .entree
+                %h4 organic chicken
+                %h5 summer squash | smoked potato | raspberry
+                %h5 19
+              .entree
+                %h4 beef
+                %h5 cauliflower | chard | harissa | carrot jus
+                %h5 24
+            .grid_4
+              %h6 sea
+              .entree
+                %h4 salt baked salmon
+                %h5 fennel | peas | dill
+                %h5 22
+              .entree
+                %h4 line caught halibut
+                %h5 fingerling potato | green beans | herb purée
+                %h5 25
+            .grid_4.omega
+              %h6 soil
+              .entree
+                %h4 summer squash 'pasta'
+                %h5 tomato fondue | basil | cashew cream
+                %h5 16
+              .entree
+                %h4 cauliflower
+                %h5 polenta | kale | smoked tomato | walnut
+                %h5 18
+              
+        .course
+          %h3 dessert
+          .row
+            .grid_4
+              %h4 smoked chocolate pudding
+              %h5 walnut | maple
+              %h5 8
+            .grid_4
+              %h4 olive oil cake
+              %h5 lcitrus marmalade | lavender cream
+              %h5 9
+            .grid_4.omega
+              %h4 berry semifreddo 
+              %h5 pistachio | vanilla
+              %h5 9
+      
+  #slide3.slide.coolbg{"data-slide" => "3", "data-stellar-background-ratio" => "0.5"}
+    .padding_slide
+      .container.clearfix
+        .row
+  #slide4.slide.div-dark{"data-slide" => "4"}
+    .container.clearfix
+      .row.drinks
+        .grid_6
+          %h3 cocktails
+          %h4 gothic 75
+          %h5 hendrick’s gin | lemon | st. germain | biancavigna prosecco
+          %h4 belfast pimm's
+          %h5 pimm’s | sapphire gin | muddled citrus | cucumber | mint | ginger
+          %h4 dark & stormy
+          %h5 gosling’s dark rum | maine root ginger beer | lime
+          %h4 maine st. martini
+          %h5 cold river gin or vodka | dolin vermouth | olives or a twist
+          %h4 new england negroni
+          %h5 liquore strega | dolin vermouth blanc | grapefruit bitters | citrus
+          %h4 wild rose
+          %h5 el tesoro platinum tequila | lillet | grapefruit | lime | rosehip
+          %h4 maple manhattan
+          %h5 bulleit bourbon | maple syrup | black walnut & cherry bark bitters
+          %h4 cape aviation
+          %h5 lavender-infused beefeater 24 gin | contratto vermouth bianco | lemon | orange bitters | thyme
+        .grid_6.omega
+          %h3 beer
+          %h4 reissdorf kölsch | 5
+          %h4 froich scottish heather ale | 6
+          %h4 schneider-weisse tap four | 6
+          %h4 duchesse de bourgogne | 9
+          %h4 st. bernardus abt | 9
+          %h4 weyerbacher last chance ipa | 6
+          %h4 almond 22 pink pepper ipa | 11 
+          %h4 old tom | 8
+          %h4 sinebrychoff porter | 8
+          %h4 lion stout | 6
+          %h4 verdi imperial stout | 8
+          %h4 original sin pear cider | 5
+          %h4 etienne dupont cidre bouche brut | 8 
+          %h4 einbecker n/a | 5
+        .grid_6  
+          %h3 sparkling
+          %h4 prosecco | biancavigna brut nv | italy
+          %h4 cava | castellroig | spain
+          %h4 rose | duc de raybaud | france 
+          %h4 champagne | jean vesselle nv brut
+        .grid_6.omega
+          %h3 rose
+          %h4 dornfelder | stauss | austria
+          %h4 syrah | chateau la coste | france
+          %h4 sangiovese | il rose di casanova | italy
+        .grid_6
+          %h3 white
+          %h4 vinho verde | ponte branco | portugal
+          %h4 jacquere | denis & didier | chignin
+          %h4 gruner veltliner | soellner | austria
+          %h4 chardonnay | warwick estate | south africa
+          %h4 chardonnay | macon la roche vineuse | burgundy txakolil | ametzal | spain
+          %h4 pinot grigio | alois lageder | alto adige
+          %h4 riesling | diehl | pfalz
+          %h4 grillo parlante | fondo antico | sicily
+          %h4 chablis | domaine servin “les pargues” | burgundy
+          %h4 sancerre | gerard pierre | morin
+          %h4 viognier | fausse piste 2011 | oregon
+          %h4 chardonnay | porter creek old vine 2010 | russian river
+          %h4 chardonnay | marc morey 2010 | rully 1er cru | burgundy
+        .grid_6.omega
+          %h3 red
+          %h4 sangiovese | ciacci piccolomini | tuscany
+          %h4 pinot noir | roncier | burgundy
+          %h4 chinon | clos de la lysadiere | loire 
+          %h4 barbera d'alba | guidobono | piemonte
+          %h4 cabernet sauvignon | grady | lodi
+          %h4 syrah | les cotes de l'ouest | terre rouge | sierra foothills 
+          %h4 zinfandel | hobo | sonoma county
+          %h4 grenache | chateau de flaugergues | languedoc 
+          %h4 dornfelder | diehl | pfalz
+          %h4 tempranillo | bagordi | rioja
+          %h4 pinot noir | markowilsch | austria
+          %h4 chianti classico | tenuta villa rosa | italy
+          %h4 ruche | vigna del parroco | castagnole monferrato | italy 
+          %h4 malbec | gouleyant | cahors
+          %h4 dolcetto d'alba | tre vigne | vietti | piedmont
+          %h4 pinot noir | st. innocent | temperance hill | oregon 
+          %h4 chateauneuf-du-pape | domaine roger perrin
+          %h4 barolo | casciana bruni | serralunga d’alba
+          %h4 fattio | brunello di montalcino | italy
+          %h4 chateau musar | lebanon
+          
+
+  #slide5.slide.coolbg{"data-slide" => "5", "data-stellar-background-ratio" => "0.5"}
+    .padding_slide
+      .container.clearfix
+  #slide6.slide.div-light{"data-slide" => "6"}
+    .container.clearfix
+      .row.m-20
+        .grid_7.omega
+          %h1 the cusine
+          %p At the cross of where tradition meets innovation, we have developed our menu. Taking the best from Maine's land, sea and soil, our chef Jason Paul has embarked on a culinary journey highlighting the best from what's in season. Inspired by the local flora and fauna, we present cuisine that will indulge the senses and nourish the body.
+        .grid_4.offset-1.omega
+          %img{:alt => "The Cuisine", :src => "../assets/images/circle1.png"}/
+        .clear
+      .row.m-20
+        .grid_7.push-4.omega.offset-1
+          %h1 the space
+          %p Commissioned by The Belfast National Bank in the 1870's and designed by Portland Architect George M. Harding, the High Victorian Gothic style of adorns every corner of Belfast's flatiron building. From the wrought-iron spires atop the dormer windows, to the decorative stone pilasters and ornate brickwork, we are fortunate to have 108 Main Street as our home and kitchen.
+        .grid_4.pull-8
+          %img{:alt => "The Space", :src => "../assets/images/circle2.png"}/
+        .clear
+      .row.m-20
+        .grid_7.omega
+          %h1 belfast, maine
+          %p Nestled in the heart of the Maine coast, our community is as beautiful and idyllic as Thoreau’s dreams. Whether it’s a summer vacation or a four season homestead, our jewel in the Penobscot Bay is a sight to be hold. We at The Gothic are blessed to have the local support and love required to make our mission successful.
+        .grid_4.offset-1.omega
+          %img{:alt => "The Cuisine", :src => "../assets/images/circle3.png"}/
+        .clear
+  #slide7.slide.coolbg{"data-slide" => "7", "data-stellar-background-ratio" => "0.5"}
+    .padding_slide
+      .container.clearfix
+  #slide8.slide.div-dark{"data-slide" => "8"}
+    .container.clearfix    
+      .row
+        .grid_9
+          %h1 reservations
+          %p Book online or give us a call at (207) 338-GOTH. We look forward to seeing you.
+          .row.clearfix
+            .grid_6
+              %h2 LUNCH
+              %p Noon - 2PM
+            .grid_6.omega
+              %h2 DINNER
+              %p 6PM - 10PM
+        .grid_3.omega
+          %iframe#seatme-widget{:frameborder => "0", :height => "515", :src => "https://www.seatme.com/api/v3/widget.htm?restaurant-id=0a0ae4f6-d2f4-11e2-bfcb-12314000ca9c&mobile-prompt=false&color=%23a6b2a3", :width => "240"}
+          :css
+            #seatme-link a:link {text-decoration: none; color:#b3b3b3} #seatme-link a:hover {text-decoration: none; color:#066382} #seatme-link a:visited {text-decoration: none; color:#066382}#seatme-link
+            
+  #slide9.slide.coolbg{"data-slide" => "9", "data-stellar-background-ratio" => "0.5"}
+    .padding_slide
+      .container.clearfix
+  #slide10.slide.div-light{"data-slide" => "10"}
+    .container.clearfix
+      .row
+        .grid_6.fright
+          
+        .grid_6
+          %h1 contact
+          %p
+            108 Main Street
+            %br>/
+            Belfast,  Maine
+            %br>/
+            (207) 338 - GOTH
+        .grid_6
+          %h2 follow us
+          %ul
+            %li
+              %a{:href => "http://facebook.com/thegothic", :title => "Facebook"} Facebook
+            %li
+              %a{:href => "http://twitter.com/thegothic", :title => "Twitter"} Twitter
+            %li
+              %a{:href => "http://instagram.com/thegothicrestaurant", :title => "Instagram"} Instagram
+            %li
+              %a{:href => "https://foursquare.com/v/the-gothic/519ed1d6011ca5da67d27f83", :title => "Foursquare"} Foursquare
+  #slide11.slide.coolbg{"data-slide" => "11", "data-stellar-background-ratio" => "0.5"}
+    .padding_slide
+      .container.clearfix
+  #footer.div-light
+    .container.clearfix
+      .copyright © 2013 The Gothic Restaurant
+      #back_top
+        %a.button{"data-slide" => "1", :title => ""}
