@@ -197,6 +197,7 @@ DEPENDENCIES
   activeadmin
   better_errors
   binding_of_caller
+  bourbon
   coffee-rails (~> 3.2.1)
   compass-rails
   fittext

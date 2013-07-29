@@ -12,6 +12,9 @@
   <!-- @stylesheet assets/css/* -->
   <!-- @javascript jquery -->
   <!-- @javascript assets/js/* -->
+  = stylesheet_link_tag "application"
+  = javascript_include_tag 'application'
+
 %body
   #slide1.slide{"data-slide" => "1", "data-stellar-background-ratio" => "0.5"}
     .padding_slide1
@@ -275,21 +278,21 @@
           %h1 the cusine
           %p At the cross of where tradition meets innovation, we have developed our menu. Taking the best from Maine's land, sea and soil, our chef Jason Paul has embarked on a culinary journey highlighting the best from what's in season. Inspired by the local flora and fauna, we present cuisine that will indulge the senses and nourish the body.
         .grid_4.offset-1.omega
-          %img{:alt => "The Cuisine", :src => "../assets/images/circle1.png"}/
+          %img{:alt => "The Cuisine", :src => asset_path("circle1.png")}/
         .clear
       .row.m-20
         .grid_7.push-4.omega.offset-1
           %h1 the space
           %p Commissioned by The Belfast National Bank in the 1870's and designed by Portland Architect George M. Harding, the High Victorian Gothic style of adorns every corner of Belfast's flatiron building. From the wrought-iron spires atop the dormer windows, to the decorative stone pilasters and ornate brickwork, we are fortunate to have 108 Main Street as our home and kitchen.
         .grid_4.pull-8
-          %img{:alt => "The Space", :src => "../assets/images/circle2.png"}/
+          %img{:alt => "The Space", :src => asset_path("circle2.png")}/
         .clear
       .row.m-20
         .grid_7.omega
           %h1 belfast, maine
           %p Nestled in the heart of the Maine coast, our community is as beautiful and idyllic as Thoreau’s dreams. Whether it’s a summer vacation or a four season homestead, our jewel in the Penobscot Bay is a sight to be hold. We at The Gothic are blessed to have the local support and love required to make our mission successful.
         .grid_4.offset-1.omega
-          %img{:alt => "The Cuisine", :src => "../assets/images/circle3.png"}/
+          %img{:alt => "The Cuisine", :src => asset_path("circle3.png")}/
         .clear
   #slide7.slide.coolbg{"data-slide" => "7", "data-stellar-background-ratio" => "0.5"}
     .padding_slide
