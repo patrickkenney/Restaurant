@@ -10,7 +10,7 @@ body {
   font-style: normal;
   line-height: 30px;
   overflow-x: hidden;
-  background: #efefe6 url(crest.svg) no-repeat;
+  background: #efefe6 url(assets/images/crest.svg) no-repeat;
   background-size: 60%;
   background-position: center center;
   background-attachment: fixed;
@@ -25,13 +25,13 @@ body .div-dark ::selection, body .div-dark ::-moz-selection {
 body .div-light ::selection, body .div-light ::-moz-selection {
   color: #171717;
   background-color: #efefe6;
-  background-color: rgba(239, 239, 230, 0.95);
+  background-color: rgba(239, 239, 230, 0.97);
 }
 
 .div-dark {
   color: #efefe6;
   background-color: #171717;
-  background-color: rgba(23, 23, 23, 0.95);
+  background-color: rgba(23, 23, 23, 0.97);
 }
 
 .div-light, #undefined-sticky-wrapper {
@@ -221,7 +221,7 @@ h5 {
 }
 
 #slide1 {
-  background-image: url(night.jpg);
+  background-image: url(assets/images/night.jpg);
   background-size: cover !important;
   background-position: 0 0 !important;
   width: 100%;
@@ -237,7 +237,7 @@ h5 {
 .left_bord {
   display: inline-block;
   padding-bottom: 7px;
-  background: url(left_bord.png) no-repeat;
+  background: url(assets/images/left_bord.png) no-repeat;
   height: 2px;
   width: 140px;
 }
@@ -246,7 +246,7 @@ h5 {
 .right_bord {
   display: inline-block;
   padding-bottom: 7px;
-  background: url(right_bord.png) no-repeat;
+  background: url(assets/images/right_bord.png) no-repeat;
   height: 2px;
   width: 140px;
 }
@@ -278,7 +278,7 @@ h5 {
   position: absolute;
   top: 0px;
   right: 0px;
-  background: url(button_down.png) no-repeat right;
+  background: url(assets/images/button_down.png) no-repeat right;
   background-position: 0 2px;
   width: 90px;
   height: 90px;
@@ -302,7 +302,7 @@ h5 {
 /* ____________________________________ Slide 3 ____________________________________ */
 /* line 259, ../../../app/assets/stylesheets/sass/style.css.sass */
 #slide3 {
-  background-image: url(salad.jpg);
+  background-image: url(assets/images/salad.jpg);
   background-size: cover !important;
   width: 100%;
 }
@@ -317,7 +317,7 @@ h5 {
 }
 
 #slide5 {
-  background-image: url(bar.jpg);
+  background-image: url(assets/images/bar.jpg);
   background-size: cover !important;
   width: 100%;
   height: auto;
@@ -334,7 +334,7 @@ h5 {
 
 /* ____________________________________ Slide 7 ____________________________________ */
 #slide7 {
-  background-image: url(people.jpg);
+  background-image: url(assets/images/people.jpg);
   background-size: cover !important;
   width: 100%;
 }
@@ -349,7 +349,7 @@ h5 {
 
 /* ____________________________________ Slide 9 ____________________________________ */
 #slide9 {
-  background-image: url(1680goth.jpg);
+  background-image: url(assets/images/1680goth.jpg);
   background-size: cover !important;
   width: 100%;
   
@@ -357,7 +357,7 @@ h5 {
 
 /* ____________________________________ Slide 9 ____________________________________ */
 #slide11 {
-  background-image: url(map.jpg);
+  background-image: url(assets/images/map.jpg);
   background-size: cover !important;
   width: 100%;
   
