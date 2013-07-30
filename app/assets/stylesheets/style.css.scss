@@ -1,12 +1,12 @@
 @import 'bourbon/bourbon';
-@include font-face(Ashbury, 'assets/fonts/ashbury/reg/ashburyreg');
-@include font-face(Ashbury, 'assets/fonts/ashbury/bol/ashburybol', bold);
-@include font-face(Ashbury, 'assets/fonts/ashbury/ita/ashburyita', normal, italic);
-@include font-face(Ashbury, 'assets/fonts/ashbury/lig/ashburylig', 100);
-@include font-face(Brand, 'assets/fonts/icons/brand', normal);
+@include font-face(Ashbury, 'fonts/ashburyreg', normal, true);
+@include font-face(Ashbury, '/ashburybol', bold, true);
+@include font-face(Ashbury, '/ashburyita', normal, italic, true);
+@include font-face(Ashbury, 'fonts/ashburylig', 100, true);
+@include font-face(Brand, '/brand', normal, true);
 
 body {
-  font-family: "Ashbury";
+  font-family: "Ashbury", sans-serif;
   font-size: 20px;
   font-style: normal;
   line-height: 30px;
