@@ -61,6 +61,9 @@ module TheGothic
     config.assets.version = '1.0'
     # Serve fonts via Asset Pipeline
     config.assets.paths << Rails.root.join("app", "assets", "fonts", "ashbury")
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
+
     config.assets.precompile += %w( .svg .eot .woff .ttf )
     
   end

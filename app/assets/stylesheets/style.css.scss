@@ -1,9 +1,9 @@
 @import 'bourbon/bourbon';
-@include font-face(Ashbury, 'fonts/ashburyreg', normal, true);
-@include font-face(Ashbury, '/ashburybol', bold, true);
-@include font-face(Ashbury, '/ashburyita', normal, italic, true);
-@include font-face(Ashbury, 'fonts/ashburylig', 100, true);
-@include font-face(Brand, '/brand', normal, true);
+@include font-face(Ashbury, '/assets/ashburyreg', normal, true);
+@include font-face(Ashbury, '/assets/ashburybol', bold, true);
+@include font-face(Ashbury, '/assets/ashburyita', normal, italic, true);
+@include font-face(Ashbury, '/assets/ashburylig', 100, true);
+@include font-face(Brand, '/assets/brand', normal, true);
 
 body {
   font-family: "Ashbury", sans-serif;
@@ -11,7 +11,7 @@ body {
   font-style: normal;
   line-height: 30px;
   overflow-x: hidden;
-  background: #efefe6 url(assets/images/crest.svg) no-repeat;
+  background: #efefe6 url(crest.svg) no-repeat;
   background-size: 60%;
   background-position: center center;
   background-attachment: fixed;
