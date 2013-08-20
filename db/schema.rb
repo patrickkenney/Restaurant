@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130820152453) do
+ActiveRecord::Schema.define(:version => 20130820194033) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -55,6 +55,17 @@ ActiveRecord::Schema.define(:version => 20130820152453) do
     t.decimal  "price",       :precision => 5, :scale => 2
     t.datetime "created_at",                                :null => false
     t.datetime "updated_at",                                :null => false
+  end
+
+  create_table "menu_items_menus", :force => true do |t|
+    t.integer "menu_id"
+    t.integer "menu_item_id"
+  end
+
+  create_table "menus", :force => true do |t|
+    t.string   "menutype"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "versions", :force => true do |t|
