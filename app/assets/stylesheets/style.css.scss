@@ -4,9 +4,10 @@
 @include font-face(Ashbury, '/assets/ashburyita', normal, italic, true);
 @include font-face(Ashbury, '/assets/ashburylig', 100, true);
 @include font-face(Brand, '/assets/brand', normal, true);
+@include font-face(Awesome, '/assets/fontawesome', normal, true);
 
 body {
-  font-family: "Ashbury", sans-serif;
+  font-family: "Ashbury";
   font-size: 20px;
   font-style: normal;
   line-height: 30px;
@@ -17,49 +18,51 @@ body {
   background-attachment: fixed;
   font-weight: 100;
 }
-body .div-dark ::selection, body .div-dark ::-moz-selection {
-  color: #efefe6;
-  background-color: #171717;
-  background-color: rgba(23, 23, 23, 0.15);
-}
-
-body .div-light ::selection, body .div-light ::-moz-selection {
-  color: #171717;
-  background-color: #efefe6;
-  background-color: rgba(239, 239, 230, 0.97);
-}
 
 .div-dark {
   color: #efefe6;
   background-color: #171717;
   background-color: rgba(23, 23, 23, 0.97);
+  ::selection, ::-moz-selection {
+    color: #efefe6;
+    background-color: #171717;
+    background-color: rgba(23, 23, 23, 0.15);
+  }
 }
 
 .div-light, #undefined-sticky-wrapper {
   color: #171717;
   background-color: #efefe6;
   background-color: rgba(239, 239, 230, 0.95);
+  ::selection, ::-moz-selection {
+    color: #171717;
+    background-color: #efefe6;
+    background-color: rgba(239, 239, 230, 0.97);
+  }
+  .logo {
+    color: rgba(46, 50, 45, 0.95);
+  }
 }
 
 img {
   max-width: 100%;
 }
-
-a:link {
-  color: #a6b2a3;
+a {
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
 }
-a:hover {
-  color: #a6b2a3;
-}
-a:visited {
-  color: #a6b2a3;
-  text-decoration: none;
-}
-
-.iconfont {
-  font-family: "Brand";
-  text-transform: lowercase !important;
+p {
+  a:link {
+    color: #a6b2a3;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #a6b2a3;
+  }
+  a:visited {
+    color: #a6b2a3;
+    text-decoration: none;
+  }
 }
 
 .fright {
@@ -77,62 +80,64 @@ a:visited {
 /* Navigation */
 .menu {
   position: relative;
-  top: 0px;
   width: 100%;
-  height: 76px;
   background-color: #2e322d;
   background-color: rgba(46, 50, 45, 0.95);
   z-index: 9999;
+  padding: 0 0 12px;
 }
 
-#logo {
-  margin-bottom: 0;
-  font-size: 100px;
-  line-height: 120px;
-  color: #eeeee2;
-}
-
-#logo a {
-  cursor: pointer;
-}
-
-#logo a:hover {
-  opacity: 0.8;
-  color: #eeeee2;
+.logo {
+  margin-bottom: 20px;
+  font-size: 6em;
+  line-height: 1;
+  font-family: "Brand";
+  text-transform: lowercase !important;
+  display: block;
+  cursor: pointer;  
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .navigation {
   list-style: none;
   margin: 0;
-  text-align: center;
-}
-
-ul.navigation {
-  margin: 0;
   padding: 0;
+  text-align: center;
+  li {
+    text-align: left;
+    padding: 16px 14px;
+    margin-left: 0;
+    text-transform: uppercase;
+    background: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a6b2a3;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+  .iconfont {
+    font-size: 42px;
+    padding: 11px 0px;
+    top: 16px;
+    position: relative;
+    font-family: "Brand";
+    text-transform: lowercase !important;
+  }
+  .iconfont.active {
+    background: none;
+  }
 }
 
-.navigation li {
-  text-align: left;
-  padding: 28px 15px;
-  margin-left: 0;
-  text-transform: uppercase;
-  background: none;
-  display: inline-block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #a6b2a3;
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-}
 .navigation .active, .navigation li:active, .navigation .active li:hover {
   cursor: pointer;
   background: #434742;
   color: #eeeee2;
 }
+
 .navigation li:hover {
   color: #eeeee2;
   cursor: pointer;
@@ -140,19 +145,6 @@ ul.navigation {
 .navigation .active li:hover {
   cursor: auto;
 }
-.navigation .iconfont {
-  font-size: 42px;
-  padding: 11px 15px;
-  top: 16px;
-  position: relative;
-}
-
-.logo {
-  width: 360px;
-  margin-bottom: 40px;
-}
-
-/* General Slides */
 
 .slide {
   background-attachment: fixed;
@@ -170,16 +162,18 @@ h1 {
   line-height: 40px;
   font-style: italic;
   letter-spacing: 4px;
+  text-transform: italic;
 }
 
 h2 {
   font-size: 26px;
-  font-weight: normal;
+  font-weight: 100;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: normal;
   text-transform: lowercase;
   font-style: italic;
@@ -188,9 +182,9 @@ h3 {
 
 h4 {
   text-transform: lowercase;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 100;
   margin: 0;
 }
 
@@ -198,20 +192,20 @@ h5 {
   margin: 0;
   font-size: 16px;
   font-weight: 100;
+  line-height: 28px;
+  opacity: .8;
 }
 
 .drinks h5 {
   margin: 0 0 .5em;
 }
 
-/* ____________________________________ Slide 1 ____________________________________ */
-
 .padding_slide1 {
   padding: 20% 0;
 }
 
 #slide1 {
-  background-image: image-url("night.jpg");
+  background-image: url(night.jpg);
   background-size: cover !important;
   background-position: 0 0 !important;
   width: 100%;
@@ -224,16 +218,16 @@ h5 {
 
 .left_bord {
   display: inline-block;
-  padding-bottom: 7px;
-  background: image-url("left_bord.png") no-repeat;
+  padding-bottom: 12px;
+  background: url(left_bord.png) no-repeat;
   height: 2px;
   width: 140px;
 }
 
 .right_bord {
   display: inline-block;
-  padding-bottom: 7px;
-  background: image-url("right_bord.png") no-repeat;
+  padding-bottom: 12px;
+  background: url(right_bord.png) no-repeat;
   height: 2px;
   width: 140px;
 }
@@ -242,6 +236,7 @@ h5 {
   display: inline-block;
   margin: 0 10px;
 }
+
 #slide1 .button {
   position: relative;
   z-index: 10;
@@ -257,208 +252,141 @@ h5 {
   -o-transition: all 0.2s ease-in-out;
   height: 50px;
   width: 50px;
-}
-#slide1 .button span {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  background: image-url("button_down.png") no-repeat right;
-  background-position: 0 2px;
-  width: 90px;
-  height: 90px;
-  border-radius: 400px;
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-#slide1 .button:hover span {
-  background-position: 0px -87px;
-}
-
-/* ____________________________________ Slide 2 ____________________________________ */
-#slide2, #slide4, #slide6, #slide8, #slide10 {
-  padding: 106px 0 69px;
-}
-
-/* ____________________________________ Slide 3 ____________________________________ */
-#slide3 {
-  background-image: image-url("salad.jpg");
-  background-size: cover !important;
-  width: 100%;
+  span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url(button_down.png) no-repeat right;
+    background-position: 0 2px;
+    width: 90px;
+    height: 90px;
+    border-radius: 400px;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+  }
 }
 
 .padding_slide {
   padding: 300px 0;
 }
 
-/* ____________________________________ Slide 4 ____________________________________ */
-#slide4 {
-  padding: 106px 0 69px;
+#slide2, #slide4, #slide6, #slide8, #slide10 {
+  padding: 100px 0 70px;
+}
+
+#slide1 .button:hover span {
+  background-position: 0px -87px;
+}
+
+#slide3 {
+  background-image: url(salad.jpg);
+  background-size: cover !important;
+  width: 100%;
 }
 
 #slide5 {
-  background-image: image-url("bar.jpg");
+  background-image: url(bar.jpg);
   background-size: cover !important;
   width: 100%;
   height: auto;
   text-align: center;
+  p {
+    font-size: 69px;
+    color: #323232;
+    line-height: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 }
 
-#slide5 p {
-  font-size: 69px;
-  color: #323232;
-  line-height: 80px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-/* ____________________________________ Slide 7 ____________________________________ */
 #slide7 {
-  background-image: image-url("people.jpg");
+  background-image: url(people.jpg);
   background-size: cover !important;
   width: 100%;
 }
 
-/* ____________________________________ Slide 8 ____________________________________ */
-#slide8 {
-  padding: 106px 0 0;
-}
-#slide8 .container {
-  margin-bottom: 80px;
-}
-
-/* ____________________________________ Slide 9 ____________________________________ */
 #slide9 {
-  background-image: image-url("1680goth.jpg");
+  background-image: url(1680goth.jpg);
   background-size: cover !important;
   width: 100%;
-  
 }
-
-/* ____________________________________ Slide 9 ____________________________________ */
+#slide10 {
+  .social {
+    font-family: "Awesome";
+    text-align: center;
+    position: relative;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+      a {
+        color: rgba(46, 50, 45, 0.95);
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+  h2 {
+    margin: 0;
+  }
+  .open {
+    margin-bottom: 1em;
+    p {
+      text-transform: uppercase;
+      font-size: 120%;
+      line-height: 1.4;
+      em {
+        text-transform: lowercase;
+        font-size: 90%;
+        line-height: 1;
+      }
+    }
+  }
+}
 #slide11 {
-  background-image: image-url("map.jpg");
+  background-image: url(dumplings.jpg);
   background-size: cover !important;
   width: 100%;
-  
-}
-/* ______________ CONTACT_FORM ______________ */
-::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
-  opacity: 1 !important;
-  color: #929292 !important;
 }
 
-.contact_form input[type="text"], .contact_form textarea {
-  width: 93%;
-  margin: 22px 0 0 0;
-  padding: 17px 10px 17px 21px;
-  background: white;
-  font-size: 14px;
-  line-height: 21px;
-  border: 1px solid #e3e3e3;
-  color: #929292;
-}
-.contact_form input[type="text"]:first-child {
-  margin-top: 0;
-}
-.contact_form textarea {
-  resize: none;
-  margin-top: 0;
-  height: auto;
-  min-height: 164px;
-}
-
-.contact_btn {
-  border: none;
-  text-transform: uppercase;
-  margin: 0 4px 10px 0;
-  padding: 12px 25px;
-  border-radius: 30px;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-  font-weight: 300;
-  text-align: center;
-  vertical-align: middle;
-  background: #73aeb4;
-  transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-}
-.contact_btn:hover {
-  background: #ff6600;
-}
-
-.send_btn {
-  background: #ff6600;
-}
-
-#note .notification_ok {
-  margin-top: 20px;
-  padding: 7px 10px;
-  text-align: center;
-  text-transform: uppercase;
-  background: #444444;
-  font-weight: 400;
-  font-size: 14px;
-  color: white;
-}
-#note .notification_error {
-  font-weight: 400;
-  font-size: 16px;
-  color: red;
-}
-
-/* _____________ //CONTACT_FORM _____________ */
-#map_block {
-  margin: 0;
-}
-
-/* ____________________________________ //Slide 8 ____________________________________ */
-/* ____________________________________ FOOTER ____________________________________ */
 
 #footer {
   padding: 27px 0 23px;
   text-align: center;
-}
-#footer li {
-  display: inline-block;
-  margin: 0 10px 0 0;
-}
-
-/* _____________ BACK_TOP ___________ */
-#back_top {
-  float: right;
-}
-#back_top a.button {
-  cursor: pointer;
-  position: relative;
-  z-index: 300;
-  display: block;
-  margin: 0;
-  padding-right: 20px;
-  width: 93px;
-  height: 20px;
-  text-transform: uppercase;
-  font-weight: 300;
-  color: white;
-}
-
-#back_top a.button:hover {
-  text-decoration: none;
+  li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+  #back_top {
+    float: right;
+    a.button {
+      cursor: pointer;
+      position: relative;
+      z-index: 300;
+      display: block;
+      margin: 0;
+      padding-right: 20px;
+      width: 93px;
+      height: 20px;
+      text-transform: uppercase;
+      font-weight: 300;
+      color: white;
+      :hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
-/* ____________ //BACK_TOP __________ */
-/* ___________________________________ //FOOTER ___________________________________ */
 .contentSlider {
   width: 100%;
-}
-.contentSlider img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 .content-slider-bg {
@@ -471,10 +399,6 @@ h5 {
   display: none !important;
 }
 
-.course {
-  margin: 0 0 1em;
-}
-
 .coolbg {
   opacity: 0.97;
 }
@@ -482,12 +406,16 @@ h5 {
 .m-20 {
   margin: 0 0 20px;
 }
-
-.menu_animate {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
-  top: 0;
+.p-40 {
+  padding: 90px 0 0;
 }
 .center {
   text-align: center;
+}
+.title {
+  span {
+    padding: 0 10px;
+    font-size: 2em;
+  }
+  
 }

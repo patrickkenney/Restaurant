@@ -24,8 +24,7 @@ gem 'compass-rails'
 gem 'sassy-buttons'
 gem 'fittext'
 gem 'font-awesome-sass-rails'
-
-
+gem 'paper_trail'
 
 # Gems used only for assets and not required
 # in production environments by default.
