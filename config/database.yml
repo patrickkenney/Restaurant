@@ -4,6 +4,7 @@ development:
   encoding: unicode
   database: thegothic_development
   pool: 5
+  prepared_statements: false
 
 test:
   adapter: postgresql
