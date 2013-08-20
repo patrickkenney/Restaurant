@@ -4,7 +4,7 @@
 @include font-face(Ashbury, '/assets/ashburyita', normal, italic, true);
 @include font-face(Ashbury, '/assets/ashburylig', 100, true);
 @include font-face(Brand, '/assets/brand', normal, true);
-@include font-face(Awesome, '/assets/fontawesome', normal, true);
+@include font-face(Awesome, '/assets/fontawesome-webfont', normal, true);
 
 body {
   font-family: "Ashbury";
